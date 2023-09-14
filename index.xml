@@ -216,7 +216,7 @@ data.head()
 
 
 
-&lt;div id=&#34;chart-196842735&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-786243519&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   (function() {
     let a = setInterval( function() {
@@ -226,7 +226,7 @@ data.head()
       clearInterval( a );
 
       Plotly.d3.json(&#34;./line-chart.json&#34;, function(chart) {
-        Plotly.plot(&#39;chart-196842735&#39;, chart.data, chart.layout, {responsive: true});
+        Plotly.plot(&#39;chart-786243519&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -299,6 +299,16 @@ Bob--&amp;gt;&amp;gt;John: Jolly good!
 ```
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;renders as&lt;/p&gt;
+&lt;div class=&#34;mermaid&#34;&gt;sequenceDiagram
+Alice-&gt;&gt;John: Hello John, how are you?
+loop Healthcheck
+    John-&gt;&gt;John: Fight against hypochondria
+end
+Note right of John: Rational thoughts!
+John--&gt;&gt;Alice: Great!
+John-&gt;&gt;Bob: How about you?
+Bob--&gt;&gt;John: Jolly good!
+&lt;/div&gt;
 &lt;div class=&#34;mermaid&#34;&gt;sequenceDiagram
 Alice-&gt;&gt;John: Hello John, how are you?
 loop Healthcheck
