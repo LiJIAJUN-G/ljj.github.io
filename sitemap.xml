@@ -10,11 +10,15 @@
     <lastmod>2030-06-01T13:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://lijiajun-g.github.io/ljj.github.io/publication/conda/</loc>
+    <loc>https://lijiajun-g.github.io/ljj.github.io/blogs/conda/</loc>
     <lastmod>2023-09-17T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://lijiajun-g.github.io/ljj.github.io/publication/</loc>
+    <loc>https://lijiajun-g.github.io/ljj.github.io/blogs/docker/</loc>
+    <lastmod>2023-09-17T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://lijiajun-g.github.io/ljj.github.io/blogs/</loc>
     <lastmod>2023-09-17T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
@@ -26,7 +30,7 @@
     <lastmod>2020-12-13T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://lijiajun-g.github.io/ljj.github.io/blogs/</loc>
+    <loc>https://lijiajun-g.github.io/ljj.github.io/post/</loc>
     <lastmod>2020-12-13T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
@@ -34,7 +38,7 @@
     <lastmod>2020-12-13T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://lijiajun-g.github.io/ljj.github.io/blogs/getting-started/</loc>
+    <loc>https://lijiajun-g.github.io/ljj.github.io/post/getting-started/</loc>
     <lastmod>2020-12-13T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
@@ -42,11 +46,11 @@
     <lastmod>2020-12-13T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://lijiajun-g.github.io/ljj.github.io/blogs/writing-technical-content/</loc>
+    <loc>https://lijiajun-g.github.io/ljj.github.io/post/writing-technical-content/</loc>
     <lastmod>2019-07-12T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://lijiajun-g.github.io/ljj.github.io/publication/preprint/</loc>
+    <loc>https://lijiajun-g.github.io/ljj.github.io/blogs/preprint/</loc>
     <lastmod>2019-04-07T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
@@ -54,7 +58,7 @@
     <lastmod>2019-04-07T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://lijiajun-g.github.io/ljj.github.io/blogs/jupyter/</loc>
+    <loc>https://lijiajun-g.github.io/ljj.github.io/post/jupyter/</loc>
     <lastmod>2019-09-05T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
@@ -90,7 +94,7 @@
     <lastmod>2015-09-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://lijiajun-g.github.io/ljj.github.io/publication/journal-article/</loc>
+    <loc>https://lijiajun-g.github.io/ljj.github.io/blogs/journal-article/</loc>
     <lastmod>2015-09-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
@@ -98,8 +102,11 @@
     <lastmod>2015-09-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://lijiajun-g.github.io/ljj.github.io/publication/conference-paper/</loc>
+    <loc>https://lijiajun-g.github.io/ljj.github.io/blogs/conference-paper/</loc>
     <lastmod>2013-07-01T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://lijiajun-g.github.io/ljj.github.io/post/docker/</loc>
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://lijiajun-g.github.io/ljj.github.io/categories/</loc>

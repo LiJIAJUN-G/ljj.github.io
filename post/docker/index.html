@@ -1,0 +1,1353 @@
+<!DOCTYPE html>
+<!-- This site was created with Wowchemy. https://www.wowchemy.com -->
+<!-- Last Published: 2023年9月17日 --><html lang="zh-Hans" >
+
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  
+  
+    <meta name="generator" content="Wowchemy 5.7.0 for Hugo" />
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  
+
+  
+  
+  
+    
+      
+      <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap" media="print" onload="this.media='all'">
+    
+  
+
+  
+  
+
+  
+  
+    
+    <script src="/ljj.github.io/js/mathjax-config.js"></script>
+  
+
+  
+
+  <link rel="stylesheet" href="/ljj.github.io/css/vendor-bundle.min.047268c6dd09ad74ba54a0ba71837064.css" media="print" onload="this.media='all'">
+
+  
+  
+  
+    
+    
+
+    
+    
+    
+    
+      
+      
+    
+    
+    
+
+    
+    
+    
+
+    
+
+    
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+  
+
+  
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/ljj.github.io/css/wowchemy.9a4bc7de73369d17124d88fffd7c35b7.css" />
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+    
+    
+    <link rel="stylesheet" href="/ljj.github.io/css/libs/chroma/github-light.min.css" title="hl-light" media="print" onload="this.media='all'" >
+    <link rel="stylesheet" href="/ljj.github.io/css/libs/chroma/dracula.min.css" title="hl-dark" media="print" onload="this.media='all'" disabled>
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+
+
+
+
+
+  <meta name="author" content="Li jiajun 李嘉俊" />
+
+
+
+
+
+  
+
+<meta name="description" content="docker基本命令的学习 基本概念 仓库: repository 远程仓库(全世界开" />
+
+
+
+<link rel="alternate" hreflang="zh-Hans" href="https://lijiajun-g.github.io/ljj.github.io/post/docker/" />
+<link rel="canonical" href="https://lijiajun-g.github.io/ljj.github.io/post/docker/" />
+
+
+
+  <link rel="manifest" href="/ljj.github.io/manifest.webmanifest" />
+
+
+
+<link rel="icon" type="image/png" href="/ljj.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_3.png" />
+<link rel="apple-touch-icon" type="image/png" href="/ljj.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_180x180_fill_lanczos_center_3.png" />
+
+<meta name="theme-color" content="#1565c0" />
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:image" content="https://lijiajun-g.github.io/ljj.github.io/post/docker/featured.png" />
+<meta property="og:site_name" content="Li jiajun" />
+<meta property="og:url" content="https://lijiajun-g.github.io/ljj.github.io/post/docker/" />
+<meta property="og:title" content="Li jiajun" />
+<meta property="og:description" content="docker基本命令的学习 基本概念 仓库: repository 远程仓库(全世界开" /><meta property="og:image" content="https://lijiajun-g.github.io/ljj.github.io/post/docker/featured.png" /><meta property="og:locale" content="zh-Hans" />
+
+  
+  
+
+
+
+
+
+
+    
+
+
+
+
+
+
+  
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://lijiajun-g.github.io/ljj.github.io/post/docker/"
+  },
+  "headline": "",
+  
+  "image": [
+    "https://lijiajun-g.github.io/ljj.github.io/post/docker/featured.png"
+  ],
+  
+  "datePublished": "0001-01-01T00:00:00Z",
+  "dateModified": "0001-01-01T00:00:00Z",
+  
+  "author": {
+    "@type": "Person",
+    "name": "Li jiajun 李嘉俊"
+  },
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "Li jiajun",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://lijiajun-g.github.io/ljj.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_3.png"
+    }
+  },
+  "description": "docker基本命令的学习 基本概念 仓库: repository 远程仓库(全世界开"
+}
+</script>
+
+  
+
+  
+
+
+
+
+  
+  
+  
+
+  
+  
+
+  
+
+
+  
+  <title>Li jiajun</title>
+
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="127726cd63ae2ab246877595df44d1d3" >
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <script src="/ljj.github.io/js/wowchemy-init.min.ec9d49ca50e4b80bdb08f0417a28ed84.js"></script>
+
+  
+
+
+<aside class="search-modal" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>搜索</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#" aria-label="Close"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="搜索..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control"
+        aria-label="搜索...">
+        
+      </div>
+
+      
+      
+
+      
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+
+  <div class="page-header header--fixed">
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+<header>
+  <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+    <div class="container-xl">
+
+      
+      <div class="d-none d-lg-inline-flex">
+        <a class="navbar-brand" href="/ljj.github.io/">Li jiajun</a>
+      </div>
+      
+
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="切换导航">
+      <span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+      
+      <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+        <a class="navbar-brand" href="/ljj.github.io/">Li jiajun</a>
+      </div>
+      
+
+      
+      
+      <div class="navbar-collapse main-menu-item collapse justify-content-end" id="navbar-content">
+
+        
+        <ul class="navbar-nav d-md-inline-flex">
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/ljj.github.io/#about"><span>Home</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/ljj.github.io/#blogs"><span>Blogs</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/ljj.github.io/#contact"><span>Contact</span></a>
+          </li>
+
+          
+          
+
+        
+
+          
+        </ul>
+      </div>
+
+      <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+
+        
+        
+          
+        
+
+        
+        
+        
+
+        
+        
+        
+        <li class="nav-item dropdown theme-dropdown">
+          <a href="#" class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-label="Display preferences">
+            <i class="fas fa-moon" aria-hidden="true"></i>
+          </a>
+          <div class="dropdown-menu">
+            <a href="#" class="dropdown-item js-set-theme-light">
+              <span>浅色</span>
+            </a>
+            <a href="#" class="dropdown-item js-set-theme-dark">
+              <span>深色</span>
+            </a>
+            <a href="#" class="dropdown-item js-set-theme-auto">
+              <span>自动</span>
+            </a>
+          </div>
+        </li>
+        
+
+        
+        
+
+      </ul>
+
+    </div>
+  </nav>
+</header>
+
+
+  </div>
+
+  <div class="page-body">
+    
+    
+    
+
+    <article class="article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+<div class="article-container pt-3">
+  <h1></h1>
+
+  
+
+  
+
+
+<div class="article-metadata">
+
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    1月 1, 0001
+  </span>
+  
+
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    3 分钟阅读时长
+  </span>
+  
+
+  
+  
+  
+  
+
+  
+  
+
+</div>
+
+  
+
+
+
+
+
+</div>
+
+
+<div class="article-header article-container featured-image-wrapper mt-4 mb-4" style="max-width: 700px; max-height: 600px;">
+  <div style="position: relative">
+    <img src="/ljj.github.io/post/docker/featured_huc6628c1fe6a4bf2e0eea6e414ccd2bc1_56460_720x2500_fit_q75_h2_lanczos_3.webp" width="700" height="600" alt="" class="featured-image">
+    
+  </div>
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style">
+      <h2 id="docker基本命令的学习">docker基本命令的学习</h2>
+<h3 id="基本概念">基本概念</h3>
+<ol>
+<li>
+<p>仓库: <code>repository</code>
+远程仓库(全世界开发者镜像以及官方发镜像)
+本地仓库(只保存当前自己使用过的镜像以及自己定义镜像)
+用来存放<code>docker</code>镜像位置作用</p>
+</li>
+<li>
+<p>镜像: <code>images</code>
+作用:一个镜像就代表一个软件如: <code>mysql</code> <code>redis</code> <code>tomcat</code></p>
+</li>
+<li>
+<p>容器: <code>container</code>
+作用:一个镜像运行一次就会生成一个实例|就是生成一个容器</p>
+</li>
+<li>
+<p>docker入门</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">docker run hello-world
+</span></span></code></pre></div></li>
+</ol>
+<h3 id="docker引擎以及镜像的相关操作">docker引擎以及镜像的相关操作</h3>
+<h4 id="查看docker引擎以及docker帮助命令">查看docker引擎以及docker帮助命令</h4>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">docker info用来展示docker信息(版本等等)
+</span></span><span class="line"><span class="cl">docker version
+</span></span><span class="line"><span class="cl">docker --help ll docker查看docker所有帮助命令
+</span></span><span class="line"><span class="cl">docker 执行命令格式: docker [options] command(具体命令)
+</span></span></code></pre></div><h4 id="操作镜像images的相关命令">操作镜像images的相关命令</h4>
+<ol>
+<li>
+<p>查看本地仓库中存在哪些镜像</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">docker images
+</span></span></code></pre></div></li>
+<li>
+<p>下载新的镜像</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">docker pull 镜像名称:版本号(推荐)
+</span></span><span class="line"><span class="cl">docker pull mvsq1:5.6.5
+</span></span><span class="line"><span class="cl">docker pull 镜像名:@DIGEST(摘要)
+</span></span><span class="line"><span class="cl">docker pull mysql:DIGEST:sha256:d8e4032005f53a774f2361281ebf61fa3d7635d5dacf9c58bc54e823ddcf9f1d
+</span></span></code></pre></div></li>
+<li>
+<p>不通过<code>dockerhub</code> 通过命令行搜索需要镜像</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">docker search mysq
+</span></span></code></pre></div></li>
+<li>
+<p>删除镜像</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">docker image rm 镜像名:tag | 镜像id
+</span></span><span class="line"><span class="cl">docker image rm -f 镜像名:taql镜像id 强制删除
+</span></span><span class="line"><span class="cl">docker rmi -f 镜像名:tag I镜像id 简化写法
+</span></span></code></pre></div></li>
+</ol>
+<h3 id="docker容器基本操作">docker容器基本操作</h3>
+<p><code>docker load -i</code> 导入tar的镜像文件名</p>
+<ul>
+<li>
+<p>通过镜像运行一个容器</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">docker run 镜像名:tag | 镜像id
+</span></span></code></pre></div><ol>
+<li>以tomcat镜像为例运行tomcat容器(运行tomcat实例)</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">docker run tomcat:8.0-jre8
+</span></span></code></pre></div><ol start="2">
+<li>宿主机端口与容器中端口进行映射 -P</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">docker run -p 8080(系统上外部口):8080(容器内服务监听的端口) tomcat:8.0-jre8
+</span></span></code></pre></div><ol start="3">
+<li>启动容器 映射外部端口 后台启动</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">docker run -p 8080(系统上外部口):8080(容器内服务监听的口) -d(后台运行) tocat:8.0-jre8
+</span></span></code></pre></div><ol start="4">
+<li>启动容器 指定名称 后台运行 端口映射</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">docker run-d(后台运行)-p 8081:8080(书写多个) --name tomcat01(器名称)tomcat:8.0-jre8(镜像名称:tag)
+</span></span></code></pre></div></li>
+<li>
+<p>查看当前运行的容器</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">docker ps查看正在运行容器
+</span></span><span class="line"><span class="cl">docker ps -a 查看所有容器(运行 &amp; 非运行)
+</span></span><span class="line"><span class="cl">docker ps -q 返回正在运行容器id
+</span></span><span class="line"><span class="cl">docker ps -qa 返回所有容器的id
+</span></span></code></pre></div></li>
+<li>
+<p>停止|关闭|重启容器</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">docker start容器名字或者容器id    开启容器
+</span></span><span class="line"><span class="cl">docker restart 容器名或者容器id     重启容器
+</span></span><span class="line"><span class="cl">docker stop容器名或者容器id   正常停止容器运行
+</span></span><span class="line"><span class="cl">docker kill容器名或者容器id   立即停止容器运行
+</span></span></code></pre></div></li>
+<li>
+<p>删除容器</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">docker rm容器名称|容器id   删除停止的容器
+</span></span><span class="line"><span class="cl">docker rm -f 容器名称I容器id   删除正在运行的容器
+</span></span><span class="line"><span class="cl">docker rm-f $(docker ps -aq)   删除所有容器
+</span></span></code></pre></div></li>
+<li>
+<p>查看容器内服务运行日志</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">docker logs容器id I 容器名称
+</span></span><span class="line"><span class="cl">docker logs -f 容器id I容器名称  实时展示日志
+</span></span><span class="line"><span class="cl">docker logs -tf 容器id I容器名称  加入时间戳实时展示日志
+</span></span></code></pre></div></li>
+<li>
+<p>查看容器内进程</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">docker top 容器id或者容器名   查看容器内的进程
+</span></span></code></pre></div></li>
+<li>
+<p>与容器内部进行交互</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">docker exec -it容器id或者容器名 bash(命行)
+</span></span><span class="line"><span class="cl">进入器与器内终进行交
+</span></span><span class="line"><span class="cl">Exit         退出容器
+</span></span></code></pre></div></li>
+<li>
+<p>操作系统与容器的传输文件</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">从容器复制文件到操作系统
+</span></span><span class="line"><span class="cl">docker cp 容器唯一标识(id,name):容器内源路径 操作文件路径/文件目录
+</span></span><span class="line"><span class="cl">从操作系统复制文件到容器
+</span></span><span class="line"><span class="cl">docker cp文件|目录名 容器唯一标识(id,name):/容器内资源路径
+</span></span></code></pre></div></li>
+<li>
+<p>查看容器内部细节</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">docker inspect 容器id/容器名称
+</span></span></code></pre></div></li>
+<li>
+<p>数据卷 volume</p>
+<p>作用:实现宿主机系统与容器之间的文件共享</p>
+</li>
+</ul>
+<h4 id="数据卷使用">数据卷使用</h4>
+<ol>
+<li>
+<p>自定义数据卷目录</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">docker run -d -p 8080:8080 --name tomcat -v宿主机名录(必须绝对):容器内目录tomcat:8.0-jre8
+</span></span></code></pre></div></li>
+<li>
+<p>自定义数据卷目录</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">docker run -d -p 8081:8080 --name tomcat02 -y /root/apps/:/usr/local/tomcat/webapps tomcat:8.0-jret
+</span></span></code></pre></div></li>
+<li>
+<p>自动数据卷目录</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"> docker run -d -p 8083:8080 --name tomcat03 -v aa:/usr/local/tomcat/webapps tomcat:8.0-jre8
+</span></span></code></pre></div><blockquote>
+<p>注意:
+aa代表一个数据卷名字,名称可以随便写,docker在不存在时自动创建这个数据卷同时自动映射宿主机中某个目录
+同时在启动容器时会将aa对应器录中全部内复制到aa射目录中</p>
+</blockquote>
+</li>
+<li>
+<p>将容器打包成一个新的镜像</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">docker commit -m&#34;描述信息”-an作者信息”(容器id或者名称)打包的镜像名称: 标签
+</span></span></code></pre></div></li>
+<li>
+<p>将镜像备份出来</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">docker save镜像名称:Tag -o文件名
+</span></span><span class="line"><span class="cl">docker save test-tomcat:1.0 -o test-tomcat-1.0.tar
+</span></span></code></pre></div></li>
+</ol>
+
+    </div>
+
+    
+
+
+
+
+
+
+
+<div class="share-box">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Flijiajun-g.github.io%2Fljj.github.io%2Fpost%2Fdocker%2F&amp;text=" target="_blank" rel="noopener" class="share-btn-twitter" aria-label="twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Flijiajun-g.github.io%2Fljj.github.io%2Fpost%2Fdocker%2F&amp;t=" target="_blank" rel="noopener" class="share-btn-facebook" aria-label="facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+        
+      
+      <li>
+        <a href="mailto:?subject=&amp;body=https%3A%2F%2Flijiajun-g.github.io%2Fljj.github.io%2Fpost%2Fdocker%2F" target="_blank" rel="noopener" class="share-btn-email" aria-label="envelope">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=https%3A%2F%2Flijiajun-g.github.io%2Fljj.github.io%2Fpost%2Fdocker%2F&amp;title=" target="_blank" rel="noopener" class="share-btn-linkedin" aria-label="linkedin-in">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="whatsapp://send?text=%20https%3A%2F%2Flijiajun-g.github.io%2Fljj.github.io%2Fpost%2Fdocker%2F" target="_blank" rel="noopener" class="share-btn-whatsapp" aria-label="whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="https://service.weibo.com/share/share.php?url=https%3A%2F%2Flijiajun-g.github.io%2Fljj.github.io%2Fpost%2Fdocker%2F&amp;title=" target="_blank" rel="noopener" class="share-btn-weibo" aria-label="weibo">
+          <i class="fab fa-weibo"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  <div class="media author-card content-widget-hr">
+    
+      
+      <a href="https://lijiajun-g.github.io/ljj.github.io/"><img class="avatar mr-3 avatar-circle" src="/ljj.github.io/authors/lijiajun/avatar_huf995ab54a61f298518d93c491d989ce9_120689_270x270_fill_q75_lanczos_center.jpg" alt="Li jiajun 李嘉俊"></a>
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="https://lijiajun-g.github.io/ljj.github.io/">Li jiajun 李嘉俊</a></h5>
+      <h6 class="card-subtitle">Phd student</h6>
+      <p class="card-text">My research interests include distributed robotics, mobile computing and programmable matter.</p>
+      <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="/#contact" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://github.com/gcushen" target="_blank" rel="noopener">
+        <i class="fab fa-github"></i>
+      </a>
+    </li>
+  
+</ul>
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+</article>
+  </div>
+
+  <div class="page-footer">
+    
+    
+    <div class="container">
+      <footer class="site-footer">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <p class="powered-by copyright-license-text">
+    © 2023 lijiajun {license}
+  </p>
+  
+
+
+
+
+
+  <p class="powered-by">
+    
+    
+    
+      
+      
+      
+      
+      
+      
+      由<a href="https://wowchemy.com/?utm_campaign=poweredby" target="_blank" rel="noopener">Wowchemy</a>支持发布——免费<a href="https://github.com/wowchemy/wowchemy-hugo-themes" target="_blank" rel="noopener">开源</a>网站，为创作者赋能。
+    
+  </p>
+</footer>
+
+    </div>
+    
+  </div>
+
+  
+
+
+<script src="/ljj.github.io/js/vendor-bundle.min.f64289d8217e08e3afcd597d60836062.js"></script>
+
+
+
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script id="search-hit-fuse-template" type="text/x-template">
+    <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+    </div>
+  </script>
+  
+    <script src="https://cdn.jsdelivr.net/gh/krisk/Fuse@v3.2.1/dist/fuse.min.js" integrity="sha512-o38bmzBGX+hD3JHWUFCDA09btWaqrNmoJ3RXLlrysA7PP01Kgs4UlE4MhelE1v5dJR3+cxlR4qQlotsW7jKsnw==" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/julmot/mark.js@8.11.1/dist/jquery.mark.min.js" integrity="sha512-mhbv5DqBMgrWL+32MmsDOt/OAvqr/cHimk6B8y/bx/xS88MVkYGPiVv2ixKVrkywF2qHplNRUvFsAHUdxZ3Krg==" crossorigin="anonymous"></script>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script id="page-data" type="application/json">{"use_headroom":true}</script>
+
+
+  <script src="/ljj.github.io/js/wowchemy-headroom.db4755770454eb63685f8de785c0a172.js" type="module"></script>
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+<script src="/ljj.github.io/zh/js/wowchemy.min.e0d73f9c4d5589dfdbb928c513f72483.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
