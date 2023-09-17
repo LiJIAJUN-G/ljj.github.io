@@ -33,10 +33,41 @@
     </item>
     
     <item>
+      <title>conda基本安装与使用</title>
+      <link>https://lijiajun-g.github.io/ljj.github.io/publication/conda/</link>
+      <pubDate>Sun, 17 Sep 2023 00:00:00 +0000</pubDate>
+      <guid>https://lijiajun-g.github.io/ljj.github.io/publication/conda/</guid>
+      <description>&lt;h1 id=&#34;conda&#34;&gt;conda&lt;/h1&gt;
+&lt;h2 id=&#34;基本安装&#34;&gt;基本安装&lt;/h2&gt;
+&lt;p&gt;清华源下载地址&lt;a href=&#34;https://mirrors.tuna.tsinghua.edu.cn/anaconda/archive/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://mirrors.tuna.tsinghua.edu.cn/anaconda/archive/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;是一个&lt;code&gt;.sh&lt;/code&gt;文件&lt;/p&gt;
+&lt;p&gt;命令行输入&lt;code&gt;sh xxxx.sh&lt;/code&gt;进行安装&lt;/p&gt;
+&lt;p&gt;中间&lt;code&gt;enter+yes&lt;/code&gt;，有一步需要设置路径，最后一步问是否自动配置环境变量，可根据自己情况自己配置。&lt;/p&gt;
+&lt;h2 id=&#34;基本操作&#34;&gt;基本操作&lt;/h2&gt;
+&lt;p&gt;创建新环境&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;conda create -n python python=3 r-base=3.6
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;创建一个&lt;code&gt;name&lt;/code&gt;为&lt;code&gt;python&lt;/code&gt;，默认&lt;code&gt;python&lt;/code&gt;版本为3的环境&lt;/p&gt;
+&lt;p&gt;激活conda activate python
+退出环境 conda deactivate&lt;/p&gt;
+&lt;h2 id=&#34;pip换源&#34;&gt;pip换源&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;pip config set global.index-url http://mirrors.aliyun.com/pypi/simple/
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;pip config set global.trusted-host mirrors.aliyun.com 
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;常用命令&#34;&gt;常用命令&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Nohup      #命令 &amp;gt; 1.log &amp;amp;挂在后台运行
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Jobs       #查看当前进程
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Ps -aux    #查看所有进程
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Top        #查看进程
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Kill -9    #杀死进程
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+    </item>
+    
+    <item>
       <title>Welcome to Wowchemy, the website builder for Hugo</title>
-      <link>https://lijiajun-g.github.io/ljj.github.io/post/getting-started/</link>
+      <link>https://lijiajun-g.github.io/ljj.github.io/blogs/getting-started/</link>
       <pubDate>Sun, 13 Dec 2020 00:00:00 +0000</pubDate>
-      <guid>https://lijiajun-g.github.io/ljj.github.io/post/getting-started/</guid>
+      <guid>https://lijiajun-g.github.io/ljj.github.io/blogs/getting-started/</guid>
       <description>&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kn&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;libr&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;hello&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
@@ -63,14 +94,7 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;The template is mobile first with a responsive design to ensure that your site looks stunning on every device.&#34; srcset=&#34;
-               /ljj.github.io/post/getting-started/featured_hub9ee31969f44a6711206a2baf9f065b4_241861_d56b7f7425950b2bede92b0e547993ef.webp 400w,
-               /ljj.github.io/post/getting-started/featured_hub9ee31969f44a6711206a2baf9f065b4_241861_e45c34660787d425c4003cb16efd89c0.webp 760w,
-               /ljj.github.io/post/getting-started/featured_hub9ee31969f44a6711206a2baf9f065b4_241861_1200x1200_fit_q75_h2_lanczos.webp 1200w&#34;
-               src=&#34;https://lijiajun-g.github.io/ljj.github.io/ljj.github.io/post/getting-started/featured_hub9ee31969f44a6711206a2baf9f065b4_241861_d56b7f7425950b2bede92b0e547993ef.webp&#34;
-               width=&#34;760&#34;
-               height=&#34;428&#34;
-               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;featured.jpg&#34; alt=&#34;The template is mobile first with a responsive design to ensure that your site looks stunning on every device.&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;get-started&#34;&gt;Get Started&lt;/h2&gt;
@@ -121,9 +145,9 @@
     
     <item>
       <title>Writing technical content in Markdown</title>
-      <link>https://lijiajun-g.github.io/ljj.github.io/post/writing-technical-content/</link>
+      <link>https://lijiajun-g.github.io/ljj.github.io/blogs/writing-technical-content/</link>
       <pubDate>Fri, 12 Jul 2019 00:00:00 +0000</pubDate>
-      <guid>https://lijiajun-g.github.io/ljj.github.io/post/writing-technical-content/</guid>
+      <guid>https://lijiajun-g.github.io/ljj.github.io/blogs/writing-technical-content/</guid>
       <description>&lt;p&gt;Wowchemy is designed to give technical content creators a seamless experience. You can focus on the content and Wowchemy handles the rest.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Highlight your code snippets, take notes on math classes, and draw diagrams from textual representation.&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;On this page, you&amp;rsquo;ll find some examples of the types of technical content that can be rendered with Wowchemy.&lt;/p&gt;
@@ -223,7 +247,7 @@ data.head()
 
 
 
-&lt;div id=&#34;chart-538924761&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-647281953&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   (function() {
     let a = setInterval( function() {
@@ -233,7 +257,7 @@ data.head()
       clearInterval( a );
 
       Plotly.d3.json(&#34;./line-chart.json&#34;, function(chart) {
-        Plotly.plot(&#39;chart-538924761&#39;, chart.data, chart.layout, {responsive: true});
+        Plotly.plot(&#39;chart-647281953&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -539,9 +563,9 @@ Crash --&gt; [*]
     
     <item>
       <title>Display Jupyter Notebooks with Academic</title>
-      <link>https://lijiajun-g.github.io/ljj.github.io/post/jupyter/</link>
+      <link>https://lijiajun-g.github.io/ljj.github.io/blogs/jupyter/</link>
       <pubDate>Tue, 05 Feb 2019 00:00:00 +0000</pubDate>
-      <guid>https://lijiajun-g.github.io/ljj.github.io/post/jupyter/</guid>
+      <guid>https://lijiajun-g.github.io/ljj.github.io/blogs/jupyter/</guid>
       <description>&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kn&#34;&gt;from&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;IPython.core.display&lt;/span&gt; &lt;span class=&#34;kn&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;Image&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;Image&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;https://www.python.org/static/community_logos/python-logo-master-v3-TM-flattened.png&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;
@@ -778,14 +802,6 @@ $$&lt;/p&gt;
 &lt;/div&gt;
 &lt;p&gt;Supplementary notes can be added here, including &lt;a href=&#34;https://wowchemy.com/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;code, math, and images&lt;/a&gt;.&lt;/p&gt;
 </description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://lijiajun-g.github.io/ljj.github.io/admin/config.yml</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://lijiajun-g.github.io/ljj.github.io/admin/config.yml</guid>
-      <description></description>
     </item>
     
   </channel>

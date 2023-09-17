@@ -5,12 +5,43 @@
     <link>https://lijiajun-g.github.io/ljj.github.io/publication/</link>
       <atom:link href="https://lijiajun-g.github.io/ljj.github.io/publication/index.xml" rel="self" type="application/rss+xml" />
     <description>Publications</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>zh-Hans</language><lastBuildDate>Sun, 07 Apr 2019 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>zh-Hans</language><lastBuildDate>Sun, 17 Sep 2023 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://lijiajun-g.github.io/ljj.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
       <title>Publications</title>
       <link>https://lijiajun-g.github.io/ljj.github.io/publication/</link>
     </image>
+    
+    <item>
+      <title>conda基本安装与使用</title>
+      <link>https://lijiajun-g.github.io/ljj.github.io/publication/conda/</link>
+      <pubDate>Sun, 17 Sep 2023 00:00:00 +0000</pubDate>
+      <guid>https://lijiajun-g.github.io/ljj.github.io/publication/conda/</guid>
+      <description>&lt;h1 id=&#34;conda&#34;&gt;conda&lt;/h1&gt;
+&lt;h2 id=&#34;基本安装&#34;&gt;基本安装&lt;/h2&gt;
+&lt;p&gt;清华源下载地址&lt;a href=&#34;https://mirrors.tuna.tsinghua.edu.cn/anaconda/archive/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://mirrors.tuna.tsinghua.edu.cn/anaconda/archive/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;是一个&lt;code&gt;.sh&lt;/code&gt;文件&lt;/p&gt;
+&lt;p&gt;命令行输入&lt;code&gt;sh xxxx.sh&lt;/code&gt;进行安装&lt;/p&gt;
+&lt;p&gt;中间&lt;code&gt;enter+yes&lt;/code&gt;，有一步需要设置路径，最后一步问是否自动配置环境变量，可根据自己情况自己配置。&lt;/p&gt;
+&lt;h2 id=&#34;基本操作&#34;&gt;基本操作&lt;/h2&gt;
+&lt;p&gt;创建新环境&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;conda create -n python python=3 r-base=3.6
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;创建一个&lt;code&gt;name&lt;/code&gt;为&lt;code&gt;python&lt;/code&gt;，默认&lt;code&gt;python&lt;/code&gt;版本为3的环境&lt;/p&gt;
+&lt;p&gt;激活conda activate python
+退出环境 conda deactivate&lt;/p&gt;
+&lt;h2 id=&#34;pip换源&#34;&gt;pip换源&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;pip config set global.index-url http://mirrors.aliyun.com/pypi/simple/
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;pip config set global.trusted-host mirrors.aliyun.com 
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;常用命令&#34;&gt;常用命令&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Nohup      #命令 &amp;gt; 1.log &amp;amp;挂在后台运行
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Jobs       #查看当前进程
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Ps -aux    #查看所有进程
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Top        #查看进程
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Kill -9    #杀死进程
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+    </item>
     
     <item>
       <title>An example preprint / working paper</title>
